@@ -1257,6 +1257,11 @@ footer .credits a {
   }
 }
 
+.javascript_pic{
+  border-radius: 3px;
+  margin-left: 3px;
+}
+
 @media (min-width: 992px) {
   .testimonial-box .description {
     padding: 0 8rem;
@@ -1299,4 +1304,17 @@ footer .credits a {
 }
 .CV{
   font-size: 19px;
+  background-color: #007bff;
+  width: fit-content;
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.516);
+}
+.CV:hover{
+  box-shadow: 2px 2px 20px rgba(0, 153, 255, 0.902);
+  transition: 0.75s ease;
+}
+.my_CV{
+  color: whitesmoke;
+  text-shadow: 2px 2px 2.5px rgba(0, 0, 0, 0.648);
 }
