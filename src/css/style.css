@@ -1281,6 +1281,7 @@ footer .credits a {
 }
 .react-logo{
   animation: 300s anim infinite;
+  margin-left: 2px;
 }
 @keyframes anim {
   0%{
@@ -1309,6 +1310,7 @@ footer .credits a {
   padding: 10px 20px;
   border-radius: 10px;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.516);
+  min-width: 197px;
 }
 .CV:hover{
   box-shadow: 2px 2px 20px rgba(0, 153, 255, 0.902);
@@ -1317,4 +1319,5 @@ footer .credits a {
 .my_CV{
   color: whitesmoke;
   text-shadow: 2px 2px 2.5px rgba(0, 0, 0, 0.648);
+  text-align: center;
 }
