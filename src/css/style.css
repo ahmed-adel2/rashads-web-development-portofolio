@@ -1304,13 +1304,13 @@ footer .credits a {
   width: 150px !important;
 }
 .CV{
-  font-size: 19px;
   background-color: #007bff;
   width: fit-content;
-  padding: 10px 20px;
   border-radius: 10px;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.516);
-  min-width: 197px;
+  min-width: 187px;
+  padding-top: 10px;
+  padding-bottom: 0.1px;
 }
 .CV:hover{
   box-shadow: 2px 2px 20px rgba(0, 153, 255, 0.902);
@@ -1319,5 +1319,6 @@ footer .credits a {
 .my_CV{
   color: whitesmoke;
   text-shadow: 2px 2px 2.5px rgba(0, 0, 0, 0.648);
+  font-size: large;
   text-align: center;
 }
