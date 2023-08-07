@@ -329,7 +329,7 @@ a:hover {
 .back-to-top {
   position: fixed;
   display: none;
-  background: #0078ff;
+  background: linear-gradient(to right,rgba(30, 8, 140, 0.79), #0078ff, rgba(30, 8, 140, 0.79));
   color: #fff;
   width: 44px;
   height: 44px;
@@ -341,6 +341,16 @@ a:hover {
   bottom: 15px;
   transition: background 0.5s;
   z-index: 11;
+  animation: topAndDown 0.5s infinite alternate-reverse;
+}
+
+@keyframes topAndDown {
+  0%{
+    transform: translateY(0px);
+  }
+  100%{
+    transform: translateY(3px);
+  }
 }
 
 .back-to-top i {
@@ -686,12 +696,15 @@ a:hover {
 
 .about-mf .about-img {
   margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .about-mf .about-img img {
   box-shadow: 2px 2px 20px 2px grey;
   width:19rem;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
 .skill-mf span {
@@ -1279,10 +1292,14 @@ footer .credits a {
     bottom: 15px;
   }
 }
-.react-logo{
-  animation: 300s anim infinite;
-  margin-left: 2px;
+.react-logo {
+  animation: 740s anim infinite linear;
 }
+
+.react-logo:hover {
+  transform: scale(1.05) rotate(36000deg);
+}
+
 @keyframes anim {
   0%{
     transform: (rotate(0));
@@ -1499,17 +1516,43 @@ button strong {
   top: 50%;
   left: 50%;
   transform: translate(-50%,-40%);
-  animation: MyPopUp 2s 3.2s ease forwards;
-  opacity: 50%;
+  animation: MyPopUp 1.7s 3.3s ease-in-out forwards;
+  opacity: 30%;
 }
 
 @keyframes MyPopUp {
   0%{
     transform: translate(-50%,-40%);
-    opacity: 50%;
+    opacity: 30%;
   }
   100%{
     transform: translate(-50%,-50%);
     opacity: 100%;
   }
+}
+
+.big-skills-holder {
+  max-height: 510px;
+  display: block;
+  overflow-y:scroll;
+}
+
+.skills-holder {
+  position: relative;
+  display: grid;
+  grid-template-areas: 
+  "a b c";
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.mySkillsIcons {
+  width: 90px;
+}
+
+.mySkillsIcons:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: 0.3s;
 }
