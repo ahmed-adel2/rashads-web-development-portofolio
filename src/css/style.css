@@ -1551,6 +1551,10 @@ button strong {
   width: 90px;
 }
 
+.rsuitejs {
+  width: 85px;
+}
+
 .mySkillsIcons:hover {
   cursor: pointer;
   transform: scale(1.05);
