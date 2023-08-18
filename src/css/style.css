@@ -1549,6 +1549,7 @@ button strong {
 
 .mySkillsIcons {
   width: 90px;
+  filter: drop-shadow(2px 2px 1.5px rgb(109, 109, 109));
 }
 
 .rsuitejs {
@@ -1557,6 +1558,6 @@ button strong {
 
 .mySkillsIcons:hover {
   cursor: pointer;
-  transform: scale(1.05);
-  transition: 0.3s;
+  transform: scale(1.08);
+  transition: 0.2s;
 }
