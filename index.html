@@ -214,9 +214,8 @@
                     design that reflects your brand and engages your customers.
                   </p>
                   <p class="lead">
-                    As an expert in HTML, CSS, JavaScript, React Js, and Next Js, I have the technical skills that you
-                    are asking
-                    for to create a responsive and visually stunning website that is optimized for desktop,
+                    As an expert in HTML, CSS, JavaScript and TypeScript, React Js, Next Js, and much more, I believe that I have the technical skills that you
+                    are asking for to create a responsive and visually stunning website that is optimized for desktop,
                     tablet, and mobile devices. I also have a keen eye for design and a solid understanding of UX
                     principles, which enables me to create interfaces that are aesthetically
                     pleasing, user-friendly, and most importantly just the way you wish it would be.
@@ -969,6 +968,21 @@
 
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
+  <!-- loader -->
+  <div id="LoaderHolder">
+    <div id="theLoader">
+      <div class="loader">
+        <div class="loaders"></div>
+        <div class="loaders"></div>
+        <div class="loaders"></div>
+        <div class="loaders"></div>
+        <div class="loaders"></div>
+        <div class="loaders"></div>
+        <div class="loaders"></div>
+        <div class="loaders"></div>
+      </div>
+    </div>
+  </div>
 
   <!-- JavaScript Libraries -->
   <script src="/lib/jquery/jquery.min.js"></script>
@@ -1000,10 +1014,18 @@
     gtag('js', new Date());
 
     gtag('config', 'G-LDZY140L8G');
+
+
+    const myLoader = document.getElementById("LoaderHolder")
+    const theHome = document.getElementById("home")
+    setTimeout(() => {
+        myLoader.innerHTML = ``
+    }, [4000])
+
   </script>
   <!-- Buttonizer -->
   <script type="text/javascript">
-    (function (n, t, c, d) { if (t.getElementById(d)) { return; }; var o = t.createElement("script"); o.id = d; o.async = !0, o.src = "https://cdn.buttonizer.io/embed.js", o.onload = function () { window.Buttonizer.init(c) }, t.head.appendChild(o) })(window, document, "daecf269-1e7f-457d-8381-e45095e3db10", "buttonizer_script");
+      (function (n, t, c, d) { if (t.getElementById(d)) { return; }; var o = t.createElement("script"); o.id = d; o.async = !0, o.src = "https://cdn.buttonizer.io/embed.js", o.onload = function () { window.Buttonizer.init(c) }, t.head.appendChild(o) })(window, document, "daecf269-1e7f-457d-8381-e45095e3db10", "buttonizer_script");
   </script>
   <!-- End Buttonizer -->
 
