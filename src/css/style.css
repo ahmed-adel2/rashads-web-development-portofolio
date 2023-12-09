@@ -1152,6 +1152,18 @@ footer .credits a {
 //--//-->   BUTTON
 ======================================*/
 
+.colored-dots {
+  color: #0078FF;
+  font-weight: 500;
+}
+
+.my-work-box {
+  box-shadow: 2px -2px 20px rgba(0, 0, 0, 0.735),
+              0px 0px 15px rgba(8, 45, 231, 0.925),
+              0px 3px 15px rgba(4, 137, 189, 0.9);
+  border-radius: 5px;
+}
+
 .button {
   display: inline-block;
   padding: .3rem .6rem;
@@ -1806,3 +1818,4 @@ footer .credits a {
     opacity: 1;
   }
 }
+
